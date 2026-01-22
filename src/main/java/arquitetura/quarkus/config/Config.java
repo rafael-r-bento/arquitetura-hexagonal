@@ -4,8 +4,8 @@ import arquitetura.quarkus.adapters.outbound.BuscarEnderecoAdapter;
 import arquitetura.quarkus.adapters.outbound.SalvarUsuarioAdapter;
 import arquitetura.quarkus.application.core.service.SalvarUsuarioService;
 
-import javax.enterprise.context.Dependent;
-import javax.enterprise.inject.Default;
+import jakarta.enterprise.context.Dependent;
+import jakarta.enterprise.inject.Default;
 
 @Dependent
 public class Config {

@@ -7,9 +7,9 @@ import arquitetura.quarkus.adapters.outbound.repository.UsuarioRepository;
 import arquitetura.quarkus.application.core.domain.Usuario;
 import arquitetura.quarkus.application.ports.out.SalvarUsuarioPort;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.transaction.Transactional;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 
 @ApplicationScoped
 public class SalvarUsuarioAdapter implements SalvarUsuarioPort {

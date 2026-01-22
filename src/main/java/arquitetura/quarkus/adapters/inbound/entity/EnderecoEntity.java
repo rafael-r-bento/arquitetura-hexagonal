@@ -2,7 +2,7 @@ package arquitetura.quarkus.adapters.inbound.entity;
 
 import arquitetura.quarkus.application.core.domain.Endereco;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class EnderecoEntity extends Endereco {

@@ -4,7 +4,7 @@ import arquitetura.quarkus.adapters.inbound.entity.EnderecoEntity;
 import arquitetura.quarkus.application.core.domain.Endereco;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "cdi")
+@Mapper(componentModel = "jakarta")
 public interface EnderecoToEnderecoEntityMapper {
 
     EnderecoEntity mapper(Endereco endereco);

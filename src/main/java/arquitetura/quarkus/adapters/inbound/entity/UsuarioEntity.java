@@ -1,6 +1,6 @@
 package arquitetura.quarkus.adapters.inbound.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity

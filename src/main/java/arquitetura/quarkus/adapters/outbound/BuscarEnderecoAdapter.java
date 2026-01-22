@@ -5,8 +5,8 @@ import arquitetura.quarkus.application.core.domain.Endereco;
 import arquitetura.quarkus.application.ports.out.BuscarEnderecoPort;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
 @ApplicationScoped
 public class BuscarEnderecoAdapter implements BuscarEnderecoPort {
