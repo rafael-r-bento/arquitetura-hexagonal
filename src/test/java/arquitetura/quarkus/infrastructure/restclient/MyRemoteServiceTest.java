@@ -1,4 +1,4 @@
-package arquitetura.quarkus;
+package arquitetura.quarkus.infrastructure.restclient;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import jakarta.inject.Inject;
-import java.util.Set;
+import java.util.List;
+
+import arquitetura.quarkus.infrastructure.restclient.dto.ExtensionDto;
 
 @QuarkusTest
 public class MyRemoteServiceTest {
@@ -17,10 +19,10 @@ public class MyRemoteServiceTest {
 
     @Test
     public void testExtensionsRestClientEndpoint() {
-        Set<MyRemoteService.Extension> restClientExtensions = myRemoteService.getExtensionsById("io.quarkus:quarkus-rest-client");
+        List<ExtensionDto> restClientExtensions = myRemoteService.getExtensionsById("io.quarkus:quarkus-rest-client");
 
         Assertions.assertEquals(1, restClientExtensions.size());
-        for (MyRemoteService.Extension extension : restClientExtensions) {
+        for (ExtensionDto extension : restClientExtensions) {
             Assertions.assertEquals("io.quarkus:quarkus-rest-client", extension.id);
             Assertions.assertEquals("REST Client", extension.name);
             Assertions.assertEquals("REST Client", extension.shortName);
