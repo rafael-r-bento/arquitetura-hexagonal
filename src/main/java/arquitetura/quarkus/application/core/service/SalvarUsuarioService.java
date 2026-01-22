@@ -11,7 +11,6 @@ public class SalvarUsuarioService implements SalvarUsuarioServicePort {
 
     private final BuscarEnderecoPort buscarEnderecoPort;
 
-
     public SalvarUsuarioService(SalvarUsuarioPort salvarUsuarioPort, BuscarEnderecoPort buscarEnderecoPort) {
         this.salvarUsuarioPort = salvarUsuarioPort;
         this.buscarEnderecoPort = buscarEnderecoPort;
