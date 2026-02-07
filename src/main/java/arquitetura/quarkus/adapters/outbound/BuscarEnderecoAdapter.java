@@ -1,8 +1,8 @@
 package arquitetura.quarkus.adapters.outbound;
 
 import arquitetura.quarkus.adapters.outbound.rest.BuscarEnderecoRest;
-import arquitetura.quarkus.application.core.domain.Endereco;
-import arquitetura.quarkus.application.ports.out.BuscarEnderecoPort;
+import arquitetura.quarkus.domain.endereco.Endereco;
+import arquitetura.quarkus.ports.out.BuscarEnderecoPort;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import jakarta.enterprise.context.ApplicationScoped;

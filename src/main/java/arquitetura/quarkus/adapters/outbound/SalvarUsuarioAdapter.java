@@ -1,11 +1,11 @@
 package arquitetura.quarkus.adapters.outbound;
 
-import arquitetura.quarkus.adapters.inbound.mapper.EnderecoToEnderecoEntityMapper;
-import arquitetura.quarkus.adapters.inbound.mapper.UsuarioEntityToUsuarioMapper;
-import arquitetura.quarkus.adapters.inbound.mapper.UsuarioToUsuarioEntityMapper;
-import arquitetura.quarkus.adapters.outbound.repository.UsuarioRepository;
-import arquitetura.quarkus.application.core.domain.Usuario;
-import arquitetura.quarkus.application.ports.out.SalvarUsuarioPort;
+import arquitetura.quarkus.utils.mappers.EnderecoToEnderecoEntityMapper;
+import arquitetura.quarkus.utils.mappers.UsuarioEntityToUsuarioMapper;
+import arquitetura.quarkus.utils.mappers.UsuarioToUsuarioEntityMapper;
+import arquitetura.quarkus.adapters.outbound.repositories.UsuarioRepository;
+import arquitetura.quarkus.domain.usuario.Usuario;
+import arquitetura.quarkus.ports.out.SalvarUsuarioPort;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;

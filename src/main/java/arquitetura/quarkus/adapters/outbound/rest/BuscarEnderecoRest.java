@@ -1,6 +1,6 @@
 package arquitetura.quarkus.adapters.outbound.rest;
 
-import arquitetura.quarkus.application.core.domain.Endereco;
+import arquitetura.quarkus.domain.endereco.Endereco;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 import jakarta.ws.rs.GET;
